@@ -10,13 +10,13 @@ export default class DeleterCell extends Cell {
 
   onUpdate() {
     if(this.direction === 0 || this.direction === -1)
-      this.field.putCell(new NullCell(), this.x+1, this.y, true)
+      this.field?.putCell(new NullCell(), this.x+1, this.y, true)
     if(this.direction === 1 || this.direction === -1)
-      this.field.putCell(new NullCell(), this.x, this.y+1, true)
+      this.field?.putCell(new NullCell(), this.x, this.y+1, true)
     if(this.direction === 2 || this.direction === -1)
-      this.field.putCell(new NullCell(), this.x-1, this.y, true)
+      this.field?.putCell(new NullCell(), this.x-1, this.y, true)
     if(this.direction === 3 || this.direction === -1)
-      this.field.putCell(new NullCell(), this.x, this.y-1, true)
+      this.field?.putCell(new NullCell(), this.x, this.y-1, true)
 
     return this
   }
